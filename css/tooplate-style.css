@@ -695,5 +695,30 @@ h5{
 }
 
 
+/* Default thumbnail style */
+.img-thumbnail {
+  width: 100%;
+  height: auto;
+    min-width: 75%;
+	max-width: 90%;  /* Adjust according to the preferred size */
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+}
+
+/* Tablet: 768px and above */
+@media (min-width: 768px) {
+  .img-thumbnail {
+    max-width: 50%; /* Adjust size for tablet */
+  }
+}
+
+/* Mobile: Below 768px */
+@media (max-width: 767px) {
+  .img-thumbnail {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
 
 
